@@ -9,7 +9,7 @@ import noteRoutes from "./routes/notes";
 const app = express();
 
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN || "https://highway-delite-pmiw.vercel.app",
+  origin: process.env.CLIENT_ORIGIN || "https://highway-delite-pmiw-q5b22c55s-nayans-projects-30ac5e85.vercel.app",
   credentials: true
 }));
 
