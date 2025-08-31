@@ -9,9 +9,10 @@ import noteRoutes from "./routes/notes";
 const app = express();
 
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN,
+  origin: process.env.CLIENT_ORIGIN || "https://highway-delite-pmiw.vercel.app",
   credentials: true
 }));
+
 app.use(express.json());
 app.use(cookieParser());
 
